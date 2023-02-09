@@ -6,6 +6,7 @@
 
 body {
   min-width: 375px;
+  height: 100vh;
 }
 
 .show {
@@ -108,6 +109,16 @@ h1, button, span, p {
     padding: 0.3125rem;
     background-color: hsl(219deg, 85%, 26%);
     color: #fff;
+    transition: all 250ms ease-in-out;
+  }
+  .notifications-container__card__content .view-msg:active {
+    background: hsl(211deg, 68%, 94%);
+    color: hsl(219deg, 85%, 26%);
+  }
+  .notifications-container__card__content .view-msg:hover, .notifications-container__card__content .view-msg:visited {
+    cursor: pointer;
+    background: hsl(211deg, 68%, 94%);
+    color: hsl(219deg, 85%, 26%);
   }
   .notifications-container__card__content .msg-box {
     padding: 1rem;
@@ -125,5 +136,17 @@ h1, button, span, p {
   .notifications-container__card .picture {
     width: 2.4375rem;
     height: 2.4375rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main {
+    width: 45.625rem;
+    margin: 3.9375rem auto 5.5625rem;
+    z-index: 1;
+  }
+  .notifications-container__card .chess {
+    position: absolute;
+    right: 0;
+    margin-right: 0.75rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -21,7 +21,8 @@ function App() {
 
 
   return (
-    <>
+    <main className="main">
+
       <header className="notifications-bar">
         <div className="notifications-bar__content">
           <h1>Notifications</h1>
@@ -91,7 +92,7 @@ function App() {
             </article>
 
       </section>
-    </>
+    </main>
   );
 }
 

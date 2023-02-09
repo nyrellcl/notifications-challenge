@@ -9,6 +9,7 @@
 
 body{
     min-width: 375px;
+    height: 100vh;
 }
 
 @function rem($number){
@@ -123,6 +124,16 @@ h1,button, span, p{
                     padding: rem(5);
                     background-color: $blue;
                     color: #fff;
+                    transition: all 250ms ease-in-out;
+                    &:active{
+                        background: $light-grey-blue-1;
+                        color: $blue;
+                    }
+                    &:hover, &:visited{
+                        cursor: pointer;
+                        background: $light-grey-blue-1;
+                        color: $blue;
+                    }
                 }
                 .msg-box{
                     padding: rem(16);
@@ -145,5 +156,23 @@ h1,button, span, p{
         }
     }
 
+}
 
+@media only screen and (min-width: 1200px){
+    .main{
+        width: rem(730);
+        margin: rem(63) auto rem(89);
+        z-index: 1;
+        
+    }
+
+    .notifications-container{
+        &__card{
+            .chess{
+                position: absolute; 
+                right: 0;
+                margin-right: 0.75rem;
+            }
+        }
+    }
 }
