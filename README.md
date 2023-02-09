@@ -51,7 +51,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Visual Studio Code
 - SASS/SCSS CSS pre-processors
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
