@@ -1,0 +1,147 @@
+@use 'sass:math';
+@import "./colors/colors";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 375px;
+}
+
+@function rem($number){
+    @if unitless($number){
+        $default-one-rem-in-pixel: 16;
+
+        @return math.div($number, $default-one-rem-in-pixel) * 1rem;
+    }
+
+    @error "This '#{number}' must not have a unit"
+};
+
+.show{
+    display: flex;
+}
+
+.none{
+    display: none;
+}
+
+.time{
+    color: $grey-blue;
+}
+
+.group{
+    color: $blue;
+    font-weight: 700;
+}
+
+h1,button, span, p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@media only screen and (min-width: 375px){
+    .notifications-bar{
+        h1{
+            font-weight: 800;
+            font-size: rem(20);
+        }
+        button{
+            font-weight: 500;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        padding: rem(24) 0;
+        &__content{
+            display: flex;
+            align-items: center;
+            gap: rem(9);
+            span{
+                justify-content: center;
+                align-items: center;
+                width: rem(35);
+                color: #fff;
+                font-weight: 800;
+                background: $blue;
+                border-radius: rem(6);
+                height: rem(25);
+            }
+        }
+        .read-msg{
+            background: none;
+            border: none;
+            color: $dark-grey-blue;
+            &:hover{
+                cursor: pointer;
+                color: $blue;
+            }
+            &:focus{
+                color: $blue;
+            }
+        }
+    }
+
+    .notifications-container{
+        &__card.none{
+            background-color: none;
+        }
+    }
+
+    .notifications-container{
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+        &__card{
+            display: flex;
+            align-items: center;
+            gap: rem(13);
+            background-color: $v-light-grey-blue;
+            border-radius: rem(8);
+            width: 92%;
+            margin: 0 auto;
+            padding: rem(16);
+            position: relative;
+            &__content{
+                p{
+                    line-height: rem(18);
+                    color: $dark-grey-blue;
+                    .name{
+                        color: $v-dark-blue;
+                    }
+                }
+                .view-msg{
+                    position: absolute;
+                    right: 0;
+                    margin-right: rem(12);
+                    border-radius: rem(4);
+                    border: none;
+                    padding: rem(5);
+                    background-color: $blue;
+                    color: #fff;
+                }
+                .msg-box{
+                    padding: rem(16);
+                    border-radius: rem(5);
+                    border: 1px solid $v-light-grey-blue;
+                    p{
+                        line-height: rem(18);
+                    }
+                }
+                .games{
+                    color: $dark-grey-blue;
+                    font-weight: 700; 
+                    margin: 0 rem(6); 
+                }
+            }
+            .picture{
+                width: rem(39);
+                height: rem(39);
+            }
+        }
+    }
+}

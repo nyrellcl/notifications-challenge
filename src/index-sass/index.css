@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+}
+
+.show {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.time {
+  color: hsl(219deg, 14%, 63%);
+}
+
+.group {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 700;
+}
+
+h1, button, span, p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@media only screen and (min-width: 375px) {
+  .notifications-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+  .notifications-bar h1 {
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+  .notifications-bar button {
+    font-weight: 500;
+  }
+  .notifications-bar__content {
+    display: flex;
+    align-items: center;
+    gap: 0.5625rem;
+  }
+  .notifications-bar__content span {
+    justify-content: center;
+    align-items: center;
+    width: 2.1875rem;
+    color: #fff;
+    font-weight: 800;
+    background: hsl(219deg, 85%, 26%);
+    border-radius: 0.375rem;
+    height: 1.5625rem;
+  }
+  .notifications-bar .read-msg {
+    background: none;
+    border: none;
+    color: hsl(219deg, 12%, 42%);
+  }
+  .notifications-bar .read-msg:hover {
+    cursor: pointer;
+    color: hsl(219deg, 85%, 26%);
+  }
+  .notifications-bar .read-msg:focus {
+    color: hsl(219deg, 85%, 26%);
+  }
+  .notifications-container__card.none {
+    background-color: none;
+  }
+  .notifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .notifications-container__card {
+    display: flex;
+    align-items: center;
+    gap: 0.8125rem;
+    background-color: hsl(210deg, 60%, 98%);
+    border-radius: 0.5rem;
+    width: 92%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+  }
+  .notifications-container__card__content p {
+    line-height: 1.125rem;
+    color: hsl(219deg, 12%, 42%);
+  }
+  .notifications-container__card__content p .name {
+    color: hsl(224deg, 21%, 14%);
+  }
+  .notifications-container__card__content .view-msg {
+    position: absolute;
+    right: 0;
+    margin-right: 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.3125rem;
+    background-color: hsl(219deg, 85%, 26%);
+    color: #fff;
+  }
+  .notifications-container__card__content .msg-box {
+    padding: 1rem;
+    border-radius: 0.3125rem;
+    border: 1px solid hsl(210deg, 60%, 98%);
+  }
+  .notifications-container__card__content .msg-box p {
+    line-height: 1.125rem;
+  }
+  .notifications-container__card__content .games {
+    color: hsl(219deg, 12%, 42%);
+    font-weight: 700;
+    margin: 0 0.375rem;
+  }
+  .notifications-container__card .picture {
+    width: 2.4375rem;
+    height: 2.4375rem;
+  }
+}/*# sourceMappingURL=index.css.map */
