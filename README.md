@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Frontend Mentor - Notifications page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Distinguish between "unread" and "read" notifications
+- Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./screenshot.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-### `npm run eject`
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Links
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://nyrellcl.github.io/notifications-challenge/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## My process
 
-## Learn More
+### Built with
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- Visual Studio Code
+- SASS/SCSS CSS pre-processors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### Code Splitting
+### What I learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I wanted to more practice creating projects using React and its features. For this project, the user stories were a great start to using React features. Since the users need to be able to distinguish between read and unread messages, this was a good part to practice useState() hook in React. Working with useState() allows me to practice creating dynamic UI's and also have more practice with JavaScript.
 
-### Analyzing the Bundle Size
+The challenges that I faced was getting the notfication number and the notifications to go from a notification, to a non-notification when the user clicks on "Mark all read"
+I'm still working on this feature, I'm sure it has a really simple solution, but figuring it out on my own will provide a great learning experience in the end. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+I also learned a lot about scalability, I didn't just want to complete this challenge, I wanted to make it my own and add even just a small feature that could potentially have a positive effect on the UI and UX for the user. 
 
-### Making a Progressive Web App
+Therefore, I added a "view message" button for when another user send the primary user a message. I thought this was necessary for the purpose of privacy. It's possible the user doesn't want any of their messages form others to be displayed right away. So, a view message button that allows them to toggle the contents of the message after the fact, could improve the user experience. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I really want to become better at creating much more complex problems, that need more complex features and solutions. But, by completing challenges like this, I will be able to gradually progress into more complex challenges and solutions. Thus, making me more prepared for when I interview and work in a professional environment. 
 
-### Deployment
+I also need to develop a more straightforward and clear path of how I go about designing before actually developing projects. I find myself just mentally mapping out the design and not physically putting down the design sketch. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+- Website - [Nyrell Leonor](https://www.nyrellcl.com)
+- Frontend Mentor - [@nyrellcl](https://www.nyrellcl.io/profile/yourusername)
+
+
+## Acknowledgments
+
+I give credits to Web Dev Cody on youtube. He's the channel I primarily used when referencing how to use certain react features and how to go about designing a project before even developing it. 
+
