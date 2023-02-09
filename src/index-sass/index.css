@@ -25,6 +25,10 @@ body {
   font-weight: 700;
 }
 
+.notifications-container__card.none {
+  background: none;
+}
+
 h1, button, span, p {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -71,9 +75,6 @@ h1, button, span, p {
   }
   .notifications-bar .read-msg:focus {
     color: hsl(219deg, 85%, 26%);
-  }
-  .notifications-container__card.none {
-    background-color: none;
   }
   .notifications-container {
     display: flex;

@@ -38,6 +38,12 @@ body{
     font-weight: 700;
 }
 
+.notifications-container{
+    &__card.none{
+        background: none;
+    }
+}
+
 h1,button, span, p{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -83,12 +89,6 @@ h1,button, span, p{
             &:focus{
                 color: $blue;
             }
-        }
-    }
-
-    .notifications-container{
-        &__card.none{
-            background-color: none;
         }
     }
 
@@ -144,4 +144,6 @@ h1,button, span, p{
             }
         }
     }
+
+
 }
