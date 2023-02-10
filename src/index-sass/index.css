@@ -26,6 +26,22 @@ body {
   font-weight: 700;
 }
 
+.games {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 700;
+  margin: 0 0.375rem;
+}
+.games:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.group, .games {
+  transition: all 250ms ease-in-out;
+}
+.group:hover, .games:hover {
+  cursor: pointer;
+}
+
 .notifications-container__card.none {
   background: none;
 }
@@ -128,11 +144,6 @@ h1, button, span, p {
   .notifications-container__card__content .msg-box p {
     line-height: 1.125rem;
   }
-  .notifications-container__card__content .games {
-    color: hsl(219deg, 12%, 42%);
-    font-weight: 700;
-    margin: 0 0.375rem;
-  }
   .notifications-container__card .picture {
     width: 2.4375rem;
     height: 2.4375rem;
@@ -143,6 +154,13 @@ h1, button, span, p {
     width: 45.625rem;
     margin: 3.9375rem auto 5.5625rem;
     z-index: 1;
+  }
+  .notifications-container__card__content p .name {
+    transition: all 250ms ease-in-out;
+  }
+  .notifications-container__card__content p .name:hover {
+    cursor: pointer;
+    color: hsl(219deg, 85%, 26%);
   }
   .notifications-container__card .chess {
     position: absolute;

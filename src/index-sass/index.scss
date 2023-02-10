@@ -39,6 +39,22 @@ body{
     font-weight: 700;
 }
 
+.games{
+    color: $dark-grey-blue;
+    font-weight: 700; 
+    margin: 0 rem(6); 
+    &:hover{
+        color: $blue;
+    }
+}
+
+.group, .games{
+    transition: all 250ms ease-in-out;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 .notifications-container{
     &__card.none{
         background: none;
@@ -143,11 +159,7 @@ h1,button, span, p{
                         line-height: rem(18);
                     }
                 }
-                .games{
-                    color: $dark-grey-blue;
-                    font-weight: 700; 
-                    margin: 0 rem(6); 
-                }
+                
             }
             .picture{
                 width: rem(39);
@@ -168,6 +180,17 @@ h1,button, span, p{
 
     .notifications-container{
         &__card{
+            &__content{
+                p{
+                    .name{
+                        transition: all 250ms ease-in-out;
+                        &:hover{
+                            cursor: pointer;
+                            color: $blue;
+                        }
+                    }
+                }
+            }
             .chess{
                 position: absolute; 
                 right: 0;
