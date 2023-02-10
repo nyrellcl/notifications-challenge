@@ -20,6 +20,7 @@ function App() {
   }
 
 
+
   return (
     <main className="main">
 
@@ -33,7 +34,7 @@ function App() {
       </header>
 
       <section className="notifications-container">
-        <article className='notifications-container__card'>
+        <article className={notifications ? 'notifications-container__card' : 'notifications-container__card none'}>
             <img className="picture"src={mark} alt='mark-picture'/>
           <div className='notifications-container__card__content'>
             <p><strong className='name'>Mark Webber</strong> reacted to your recent post <span className='games'>My first tournament today!</span></p>
@@ -41,14 +42,14 @@ function App() {
           </div>
         </article>
 
-        <article className='notifications-container__card'>
+        <article className={notifications ? 'notifications-container__card' : 'notifications-container__card none'}>
           <img className='picture' src={angela} alt="angela-picture"/>
           <div className='notifications-container__card__content'>
             <p><strong className='name'>Angela Gray</strong> followed you</p> <span className='time'>5m ago</span>
           </div>
         </article>
 
-        <article className='notifications-container__card'>
+        <article className={notifications ? 'notifications-container__card' : 'notifications-container__card none'}>
           <img className='picture' src={jacob} alt="jacob-picture"/>
           <div className='notifications-container__card__content'>
             <p><strong className='name'>Jacob Thompson</strong> has joined your group <span className='group'>Chess Club</span></p> <span className='time'>1 day ago</span>
