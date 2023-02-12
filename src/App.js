@@ -12,15 +12,12 @@ import chess from "./assets/images/image-chess.webp"
 
 function App() {
   const [notifications, setNotifications] = useState(3);
-  const [isNotification, setIsNotification] = useState(true);
   const [viewMsg, setViewMsg] = useState(false);
 
   function handleReadMsg() {
     setNotifications(0)
   }
-
-
-
+  
   return (
     <main className="main">
 
